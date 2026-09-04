@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <script>document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js');</script>
+  <title>SZ Ventures — Building Ventures That Solve Real-World Problems</title>
+  <meta name="description" content="SZ Ventures builds and scales businesses by combining opportunity, execution, technology and strategic partnerships.">
+  <meta name="theme-color" content="#0a0a0b">
+  <link rel="canonical" href="https://szventures.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SZ Ventures — Venture Studio">
+  <meta property="og:description" content="Building Ventures That Solve Real-World Problems.">
+  <meta property="og:url" content="https://szventures.com/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+
+  <!-- Project styles -->
+  <link rel="stylesheet" href="assets/styles/tokens.css">
+  <link rel="stylesheet" href="assets/styles/base.css">
+  <link rel="stylesheet" href="assets/styles/components.css">
+  <link rel="stylesheet" href="assets/styles/layout.css">
+  <link rel="stylesheet" href="assets/styles/libs.bundle.css">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body class="is-loading">
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__mark">SZ Ventures</div>
+    <div class="preloader__count" id="preCount">0</div>
+    <div class="preloader__bar"><i id="preBar"></i></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="nav glass" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" data-cursor data-tippy-content="SZ Ventures — Venture Studio">
+        <img src="/assets/img/logo.png" alt="SZ Ventures Logo" class="nav-logo-img" aria-hidden="true">
+        SZ Ventures
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#top" class="nav__link">Home</a>
+        <a href="#philosophy" class="nav__link">About</a>
+        <div class="nav__dropdown">
+          <a href="#portfolio" class="nav__link nav__dropdown-toggle">
+            Ventures
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="nav__dropdown-menu">
+            <a href="/ventures/bowl-and-sip/index.html" class="nav__dropdown-item">
+              <strong>Bowl & Sip Co.</strong>
+              <span>Nutrition & Active Lifestyle</span>
+            </a>
+            <a href="/ventures/snapops/index.html" class="nav__dropdown-item">
+              <strong>SnapOps</strong>
+              <span>Community & Operations</span>
+            </a>
+            <a href="/ventures/mirai-engineering/index.html" class="nav__dropdown-item">
+              <strong>Mirai Engineering</strong>
+              <span>Global Careers</span>
+            </a>
+            <a href="/ventures/manufacturing/index.html" class="nav__dropdown-item">
+              <strong>SZ Manufacturing</strong>
+              <span>Manufacturing & B2B</span>
+            </a>
+            <a href="/ventures/terramuse/index.html" class="nav__dropdown-item">
+              <strong>TerraMuse</strong>
+              <span>Handcrafted Décor & Gifting</span>
+            </a>
+          </div>
+        </div>
+        <a href="#partner" class="nav__link">Partner With Us</a>
+        <a href="#insights" class="nav__link">Insights</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <div class="nav__right">
+        <a href="#partner" class="btn btn--accent" data-magnetic data-cursor><span>Let's Talk →</span></a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="menu" id="menu">
+    <a href="#top" data-menu-link>Home <span>01</span></a>
+    <a href="#philosophy" data-menu-link>About <span>02</span></a>
+    <a href="#portfolio" data-menu-link>Ventures <span>03</span></a>
+    <a href="#partner" data-menu-link>Partner With Us <span>04</span></a>
+    <a href="#insights" data-menu-link>Insights <span>05</span></a>
+    <a href="#contact" data-menu-link>Contact <span>06</span></a>
+    <div class="menu__meta"><span>Venture Studio</span><span>Est. 2018</span></div>
+  </div>
+
+  <!-- Swup Main Container -->
+  <main id="swup" class="transition-fade">
+
+    <!-- HERO SECTION -->
+    <section class="hero glass" id="top">
+      <div class="hero__bg" aria-hidden="true"><div class="hero__gridlines"></div></div>
+      <div class="hero__inner container">
+        <div class="hero__meta" data-aos="fade">
+          <span class="pill"><span class="badge-dot"></span> Venture Studio</span>
+          <span class="pill">Execution · Tech · Partnerships</span>
+        </div>
+        <h1 class="hero__title display" data-aos="fade-up" data-aos-duration="900">
+          <span class="line">Building Ventures</span>
+          <span class="line">That Solve Real-World</span>
+          <span class="line"><em class="serif-accent">Problems.</em></span>
+        </h1>
+        <p class="hero__sub" data-aos="fade-up" data-aos-delay="150" data-aos-duration="900">
+          SZ Ventures builds and scales businesses by combining opportunity, execution, technology and strategic partnerships. We identify opportunities, assemble resources, build brands, create distribution, execute and scale.
+        </p>
+        <div class="hero__actions" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+          <a href="#portfolio" class="btn btn--accent" data-magnetic data-cursor><span>Explore Our Ventures</span><span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a href="#partner" class="btn btn--ghost" data-cursor><span>Partner With Us</span></a>
+        </div>
+        <div class="hero__foot">
+          <div class="hero__scroll"><i></i> Scroll to explore</div>
+          <div class="hero__index display">01 — Studio Thesis</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — WHAT WE DO / OPERATING MODEL -->
+    <section class="section philosophy glass" id="philosophy">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow" data-aos="fade">Operating Model</span>
+          <h2 data-aos="fade-up">We Don't Just Back Ideas. We Build Them.</h2>
+        </div>
+        <p class="philosophy__statement display" data-aos="fade-up" data-aos-duration="900">
+          We turn high-potential opportunities into <em>category-defining, scalable companies</em> through vertical execution.
+        </p>
+        <div class="principles">
+          <div class="principle" data-aos="fade-up">
+            <div class="principle__num">01</div>
+            <h3>IDENTIFY</h3>
+            <p>We discover real-world problems and underutilized opportunities across high-impact sectors.</p>
+          </div>
+          <div class="principle" data-aos="fade-up" data-aos-delay="100">
+            <div class="principle__num">02</div>
+            <h3>BUILD</h3>
+            <p>We combine resources, strategic partnerships, brand positioning, and modern technology stacks.</p>
+          </div>
+          <div class="principle" data-aos="fade-up" data-aos-delay="200">
+            <div class="principle__num">03</div>
+            <h3>LAUNCH</h3>
+            <p>We execute rigorously to take ventures from early proof-of-concept to live market operations.</p>
+          </div>
+          <div class="principle" data-aos="fade-up" data-aos-delay="300">
+            <div class="principle__num">04</div>
+            <h3>SCALE</h3>
+            <p>We build sustainable operational systems, distribution channels, and recurring enterprise value.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — PORTFOLIO SECTION -->
+    <section class="section portfolio glass" id="portfolio">
+      <div class="container">
+        <div class="sec-head sec-head--row">
+          <div>
+            <span class="eyebrow" data-aos="fade">Portfolio</span>
+            <h2 data-aos="fade-up">What We're Building</h2>
+          </div>
+          <p data-aos="fade">Independent ventures. One operating philosophy.</p>
+        </div>
+        
+        <div class="portfolio__list">
+
+          <!-- 01 Bowl & Sip Co. -->
+          <a class="company" href="/ventures/bowl-and-sip/index.html" data-aos="fade-up" data-cursor data-tippy-content="Explore Bowl & Sip Co.">
+            <div class="company__name">Bowl & Sip Co.</div>
+            <div class="company__thesis">Fresh, pre-order-based nutrition designed for active lifestyles.</div>
+            <div class="company__sector">Nutrition & Active Lifestyle</div>
+            <div class="company__metric"><span class="status-badge status-badge--launch">Preparing for Launch</span></div>
+            <div class="company__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+          </a>
+
+          <!-- 02 SnapOps -->
+          <a class="company" href="/ventures/snapops/index.html" data-aos="fade-up" data-cursor data-tippy-content="Discover SnapOps">
+            <div class="company__name">SnapOps</div>
+            <div class="company__thesis">A WhatsApp-first services ecosystem designed to simplify everyday operations for residential communities and businesses.</div>
+            <div class="company__sector">Community & Operations</div>
+            <div class="company__metric"><span class="status-badge status-badge--pilot">Pilot / In Development</span></div>
+            <div class="company__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+          </a>
+
+          <!-- 03 Mirai Engineering -->
+          <a class="company" href="/ventures/mirai-engineering/index.html" data-aos="fade-up" data-cursor data-tippy-content="Explore Mirai Engineering">
+            <div class="company__name">Mirai Engineering</div>
+            <div class="company__thesis">Helping engineering students prepare early for global career opportunities through language readiness, industry exposure & international partnerships.</div>
+            <div class="company__sector">Global Engineering Careers</div>
+            <div class="company__metric"><span class="status-badge status-badge--active">Active</span></div>
+            <div class="company__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+          </a>
+
+          <!-- 04 SZ Manufacturing -->
+          <a class="company" href="/ventures/manufacturing/index.html" data-aos="fade-up" data-cursor data-tippy-content="Discuss Your Requirement">
+            <div class="company__name">SZ Manufacturing</div>
+            <div class="company__thesis">Connecting businesses with flexible manufacturing and sourcing capabilities, with access to women-led production ecosystems.</div>
+            <div class="company__sector">Manufacturing & B2B</div>
+            <div class="company__metric"><span class="status-badge status-badge--active">Active B2B</span></div>
+            <div class="company__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+          </a>
+
+          <!-- 05 TerraMuse -->
+          <a class="company" href="/ventures/terramuse/index.html" data-aos="fade-up" data-cursor data-tippy-content="Explore TerraMuse Creations">
+            <div class="company__name">TerraMuse</div>
+            <div class="company__thesis">Handcrafted creative pieces, personalized décor and custom gifting experiences.</div>
+            <div class="company__sector">Handcrafted Décor & Gifting</div>
+            <div class="company__metric"><span class="status-badge status-badge--launch">Custom Commissions</span></div>
+            <div class="company__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — OPPORTUNITY / IMPACT SECTION -->
+    <section class="section philosophy glass" id="opportunity">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow" data-aos="fade">Venture Thesis</span>
+          <h2 data-aos="fade-up">Opportunity Is Everywhere. Execution Makes the Difference.</h2>
+        </div>
+        <p class="philosophy__statement display" data-aos="fade-up" data-aos-duration="900" style="max-width: 44ch;">
+          From unlocking manufacturing capacity and connecting engineering talent with global opportunities to simplifying community operations and building consumer brands, we create businesses around <em>real needs and available resources</em>.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — WHAT'S BEING BUILT (LIVE PIPELINE) -->
+    <section class="section glass" id="building-now">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow" data-aos="fade">Live Pipeline</span>
+          <h2 data-aos="fade-up">What's Being Built</h2>
+        </div>
+        
+        <div class="building-now-grid">
+          <div class="building-card" data-aos="fade-up">
+            <div>
+              <span class="status-badge status-badge--launch">Preparing for Launch</span>
+              <h3 style="margin-top:0.75rem; color:var(--ink);">Bowl & Sip Co.</h3>
+              <p style="color:var(--muted); font-size:var(--fs-400); margin-top:0.4rem;">Finalizing pre-order digital menu and active lifestyle nutrition packaging.</p>
+            </div>
+            <a href="/ventures/bowl-and-sip/index.html" class="pathway__cta">Learn More <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="building-card" data-aos="fade-up" data-aos-delay="100">
+            <div>
+              <span class="status-badge status-badge--active">Active Growth</span>
+              <h3 style="margin-top:0.75rem; color:var(--ink);">Mirai Engineering</h3>
+              <p style="color:var(--muted); font-size:var(--fs-400); margin-top:0.4rem;">Expanding college partnerships & language readiness tracks for Japan opportunities.</p>
+            </div>
+            <a href="/ventures/mirai-engineering/index.html" class="pathway__cta">Learn More <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="building-card" data-aos="fade-up" data-aos-delay="200">
+            <div>
+              <span class="status-badge status-badge--pilot">Community Pilots</span>
+              <h3 style="margin-top:0.75rem; color:var(--ink);">SnapOps</h3>
+              <p style="color:var(--muted); font-size:var(--fs-400); margin-top:0.4rem;">Preparing WhatsApp-first service pilots for residential & commercial hubs.</p>
+            </div>
+            <a href="/ventures/snapops/index.html" class="pathway__cta">Learn More <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="building-card" data-aos="fade-up" data-aos-delay="300">
+            <div>
+              <span class="status-badge status-badge--active">Expanding B2B</span>
+              <h3 style="margin-top:0.75rem; color:var(--ink);">SZ Manufacturing</h3>
+              <p style="color:var(--muted); font-size:var(--fs-400); margin-top:0.4rem;">Onboarding enterprise apparel orders & women-led production facilities.</p>
+            </div>
+            <a href="/ventures/manufacturing/index.html" class="pathway__cta">Learn More <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="building-card" data-aos="fade-up" data-aos-delay="400">
+            <div>
+              <span class="status-badge status-badge--launch">Custom Commissions</span>
+              <h3 style="margin-top:0.75rem; color:var(--ink);">TerraMuse</h3>
+              <p style="color:var(--muted); font-size:var(--fs-400); margin-top:0.4rem;">Opening handcrafted decor and bespoke corporate gifting consultations.</p>
+            </div>
+            <a href="/ventures/terramuse/index.html" class="pathway__cta">Learn More <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — PARTNERSHIP / INTAKE ENGINE -->
+    <section class="section pathways glass" id="partner">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow" data-aos="fade">Opportunity Engine</span>
+          <h2 data-aos="fade-up">Let's Build Something Valuable Together.</h2>
+          <p data-aos="fade" style="margin-top:0.5rem; color:var(--muted)">Select your background to route your inquiry directly to our venture leaders.</p>
+        </div>
+
+        <!-- Role Selector Buttons -->
+        <div class="role-selector" data-aos="fade-up">
+          <button class="role-btn is-active" data-role="company">I represent a company</button>
+          <button class="role-btn" data-role="college">I represent a college</button>
+          <button class="role-btn" data-role="manufacturer">I'm a manufacturer</button>
+          <button class="role-btn" data-role="ngo">I'm an NGO</button>
+          <button class="role-btn" data-role="investor">I'm an investor / capital partner</button>
+          <button class="role-btn" data-role="creator">I'm a creator / artisan</button>
+          <button class="role-btn" data-role="tech">I'm a technology partner</button>
+          <button class="role-btn" data-role="opportunity">I have a business opportunity</button>
+        </div>
+
+        <!-- Contextual Form -->
+        <div class="card" data-aos="fade-up" data-aos-delay="150" style="padding: clamp(2rem, 5vw, 3rem);">
+          <form class="intake-form" id="partnerForm" onsubmit="event.preventDefault(); alert('Thank you for reaching out to SZ Ventures. Your inquiry has been tagged and logged in our CRM.');">
+            
+            <input type="hidden" id="intakeRole" name="role" value="Company / Enterprise">
+            <input type="hidden" id="intakeVenture" name="target_venture" value="SZ Manufacturing / SZ Ventures">
+
+            <div>
+              <label for="fullName">Your Full Name</label>
+              <input type="text" id="fullName" name="full_name" placeholder="e.g. Rahul Sharma" required>
+            </div>
+
+            <div>
+              <label for="emailAddr">Work / Contact Email</label>
+              <input type="email" id="emailAddr" name="email" placeholder="e.g. rahul@company.com" required>
+            </div>
+
+            <div>
+              <label for="phoneNum">Phone / WhatsApp Number</label>
+              <input type="tel" id="phoneNum" name="phone" placeholder="+91 98765 43210" required>
+            </div>
+
+            <div>
+              <label id="intakeDynamicLabel" for="intakeDynamicInput">Company Name & Industry</label>
+              <input type="text" id="intakeDynamicInput" name="organization" placeholder="e.g. Acme Corp (Textiles & Retail)">
+            </div>
+
+            <div class="form-group--full">
+              <label id="intakeDetailsLabel" for="intakeDetails">Describe your corporate requirement or operational challenge</label>
+              <textarea id="intakeDetails" name="message" rows="4" placeholder="Provide details on scope, volume, timelines, or partnership goals..."></textarea>
+            </div>
+
+            <div class="form-group--full" style="margin-top: 0.5rem;">
+              <button type="submit" class="btn btn--accent" data-magnetic data-cursor><span>Submit Partnership Inquiry</span><span class="btn__arrow" aria-hidden="true">→</span></button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — INSIGHTS -->
+    <section class="section glass" id="insights">
+      <div class="container">
+        <div class="sec-head sec-head--row">
+          <div>
+            <span class="eyebrow" data-aos="fade">Thought Leadership</span>
+            <h2 data-aos="fade-up">Insights & Operating Notes</h2>
+          </div>
+          <p data-aos="fade">Perspectives on building ventures, advanced manufacturing, future of work, and global careers.</p>
+        </div>
+
+        <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2rem;" data-aos="fade-up">
+          <span class="pill">Venture Building</span>
+          <span class="pill">Manufacturing</span>
+          <span class="pill">Future of Work</span>
+          <span class="pill">Global Careers</span>
+          <span class="pill">Operations</span>
+          <span class="pill">Technology & AI</span>
+          <span class="pill">Founder Notes</span>
+        </div>
+
+        <div class="principles" style="grid-template-columns: repeat(3, 1fr);">
+          <article class="principle" data-aos="fade-up">
+            <span class="eyebrow" style="margin-bottom:0.5rem; display:block;">Venture Building</span>
+            <h3 style="font-size: var(--fs-500);">Why Execution Outweighs Ideas in Modern Studios</h3>
+            <p>A look into how assembling resources and creating distribution channels creates durable enterprise moats.</p>
+          </article>
+          <article class="principle" data-aos="fade-up" data-aos-delay="100">
+            <span class="eyebrow" style="margin-bottom:0.5rem; display:block;">Global Careers</span>
+            <h3 style="font-size: var(--fs-500);">Bridging Engineering Talent with International Opportunities</h3>
+            <p>How early language readiness and technical alignment prepare engineers for global roles in Japan and beyond.</p>
+          </article>
+          <article class="principle" data-aos="fade-up" data-aos-delay="200">
+            <span class="eyebrow" style="margin-bottom:0.5rem; display:block;">Manufacturing</span>
+            <h3 style="font-size: var(--fs-500);">Empowering Women-Led Apparel Production Systems</h3>
+            <p>Unlocking flexible B2B manufacturing through ethical sourcing, quality control, and social impact.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — FINAL CTA & CONTACT -->
+    <section class="section cta glass" id="contact">
+      <div class="container">
+        <div class="cta__inner">
+          <div>
+            <span class="eyebrow" data-aos="fade">Let's Connect</span>
+            <h2 class="display" data-aos="fade-up" data-aos-duration="900">Have an opportunity <em class="serif-accent">worth building?</em></h2>
+            <p data-aos="fade-up" data-aos-delay="150">Whether you're a business, institution, manufacturer, creator or strategic partner—we're always interested in conversations that can create meaningful value.</p>
+            <div style="margin-top:2rem" data-aos="fade-up" data-aos-delay="250">
+              <a href="#partner" class="btn btn--accent" data-magnetic data-cursor><span>Let's Talk →</span></a>
+            </div>
+          </div>
+          <div class="cta__side" data-aos="fade-up" data-aos-delay="200">
+            <div class="cta__row"><span>Email</span><a href="mailto:hello@szventures.com" data-tippy-content="We reply within two business days">hello@szventures.com</a></div>
+            <div class="cta__row"><span>Studio</span><a href="#" data-tippy-content="SZ Ventures Private Limited">SZ Ventures Pvt Ltd</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer glass">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand display">
+            <img src="/assets/img/logo.png" alt="SZ Ventures Logo" class="footer-logo-img" aria-hidden="true">
+            SZ<br>Ventures
+            <p>Building Ventures That Solve Real-World Problems.</p>
+          </div>
+          <div class="footer__col">
+            <h4>Studio</h4>
+            <a href="#top">Home</a>
+            <a href="#philosophy">About</a>
+            <a href="#portfolio">Ventures</a>
+            <a href="#partner">Partner With Us</a>
+            <a href="#insights">Insights</a>
+          </div>
+          <div class="footer__col">
+            <h4>Ventures</h4>
+            <a href="/ventures/bowl-and-sip/index.html">Bowl & Sip Co.</a>
+            <a href="/ventures/snapops/index.html">SnapOps</a>
+            <a href="/ventures/mirai-engineering/index.html">Mirai Engineering</a>
+            <a href="/ventures/manufacturing/index.html">SZ Manufacturing</a>
+            <a href="/ventures/terramuse/index.html">TerraMuse</a>
+          </div>
+          <div class="footer__col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="cookies.html">Cookie Policy</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 SZ Ventures Private Limited. All rights reserved.</span>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/company/szxofficial/" data-tippy-content="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+            <a href="https://www.instagram.com/szxholdingsofficial" data-tippy-content="Instagram" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+          </div>
+          <span>Crafted with conviction.</span>
+        </div>
+      </div>
+      <div class="footer__word display" aria-hidden="true">SZ VENTURES</div>
+    </footer>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/js/libs.bundle.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

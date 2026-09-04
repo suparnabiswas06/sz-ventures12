@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://szventures.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://szventures.com/portfolio</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://szventures.com/philosophy</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://szventures.com/achievements</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://szventures.com/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://szventures.com/snapops</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://szventures.com/bowl-sip</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://szventures.com/terramuse</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://szventures.com/mirai</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://szventures.com/sz-manufacturing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://szventures.com/team</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://szventures.com/insights</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://szventures.com/careers</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://szventures.com/press</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://szventures.com/privacy</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://szventures.com/terms</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://szventures.com/cookies</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+</urlset>
