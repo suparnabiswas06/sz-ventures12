@@ -1,0 +1,29 @@
+name: Validate static site
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate HTML entry points
+        run: |
+          set -euo pipefail
+          for f in index.html achievements.html careers.html contact.html cookies.html insights.html philosophy.html portfolio.html press.html privacy.html; do test -f "$f"; done
+      - name: Validate JavaScript syntax
+        run: |
+          set -euo pipefail
+          for f in $(find . -type f -name "*.js" -not -path "./.git/*"); do node --check "$f"; done
+      - name: Validate SEO files
+        run: |
+          set -euo pipefail
+          test -f robots.txt
+          test -f sitemap.xml
+          grep -q "<urlset" sitemap.xml
